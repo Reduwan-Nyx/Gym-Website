@@ -1,0 +1,15 @@
+[
+    {
+        "id":1, "name":"WeightLifting", "description": "Weight training is a type of strength training that uses weights for resistance. Weight training provides a stress to the muscles that causes them to adapt and get stronger, similar to the way aerobic conditioning strengthens your heart.", "img": "https://cdn-icons.flaticon.com/png/512/384/premium/384255.png?token=exp=1650182356~hmac=4acd98dabf60297146eca4234533007f" },
+        
+        {
+        "id":2, "name":"Specific Muscle", "description": "There are many ways to structure a strength training program, but many people find it helpful to pair certain muscle groups together. Working out different body parts on different days gives your muscles more rest between workouts and helps you prevent overtraining", "img": "https://cdn-icons.flaticon.com/png/512/3270/premium/3270484.png?token=exp=1650182545~hmac=c3ea58fae493c66d3672e1be361d052d" },
+        
+        {
+        "id":3, "name":"Flex Your Muscle", "description": "It can also be a way to build strength. Muscle flexing is more accurately known as muscle contraction, because when you flex your muscles, you're creating tension that's temporarily making the muscle fibers smaller or contracted", "img": "https://cdn-icons-png.flaticon.com/512/2548/2548492.png" },
+        
+        {
+        "id":4, "name":"Cardio Exercise", "description": "Cardio exercise, which is sometimes referred to as aerobic exercise, is any rhythmic activity that raises your heart rate into your target heart rate zone. This is the zone where you burn the most fat and calories. Some of the most common examples of cardio include walking, cycling, and swimming", "img": "https://cdn-icons-png.flaticon.com/512/3043/3043222.png" }
+    
+   
+]
