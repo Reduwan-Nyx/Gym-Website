@@ -21,7 +21,7 @@ const Banner = () => {
                 />
                 <Carousel.Caption>
                     <h3>FITNESS WITH US</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>The Best Fitness Services are available here</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -33,7 +33,7 @@ const Banner = () => {
 
                 <Carousel.Caption>
                     <h3>FITNESS WITH USl</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>We Will provide you The Best Fitness Mechine </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -46,7 +46,7 @@ const Banner = () => {
                 <Carousel.Caption>
                     <h3>FITNESS WITH US</h3>
                     <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        You Can Be What You Dreamd For If you Want to Be.
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
