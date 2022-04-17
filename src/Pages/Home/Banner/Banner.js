@@ -12,6 +12,7 @@ const Banner = () => {
     setIndex(selectedIndex);
   }
     return (
+        <div id='home'>
      <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <img
@@ -51,6 +52,7 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        </div>
     );
 };
 export default Banner;
