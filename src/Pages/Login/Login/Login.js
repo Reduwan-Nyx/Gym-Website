@@ -7,6 +7,7 @@ import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
  import { ToastContainer, toast } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
+ import './Login.css'
 
 const Login = () => {
     const emailRef = useRef('')
@@ -72,7 +73,7 @@ const Login = () => {
     }
 
   return (
-    <div className="container w-50 mx-auto">
+    <div className="login container ">
       <h2 className="mt-4 text-center">Please Log in</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">

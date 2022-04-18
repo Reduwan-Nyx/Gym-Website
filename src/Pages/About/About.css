@@ -1,6 +1,6 @@
 .card-container{
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
     text-align: center;
     
 }
@@ -13,11 +13,9 @@
 }
 
 
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-    .card img{
-        margin-left: 100px;
-        
-        
+@media only screen and (max-width: 576px) {
+    .card-container {
+        width: 100%;
     }
 }
 

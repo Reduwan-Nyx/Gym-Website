@@ -1,13 +1,12 @@
 .blog-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     text-align: center;
-    margin: 50px 90px; 
-    height: 700px;
+
 }
 
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (max-width: 576px) {
     .blog-container {
-        grid-template-columns: repeat(2, 1fr);
-        width: 50%;
-        height: 100px;
+        width: 100%;
     }
 }

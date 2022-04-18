@@ -3,13 +3,9 @@ import { Card } from "react-bootstrap";
 import "./Blog.css";
 const Blog = () => {
   return (
-    <div className="blog d-flex ">
+    <div className="blogs ">
       <>
-        <Card
-          className="blog-container"
-          border="primary"
-          style={{ width: "18rem" }}
-        >
+        <Card className="blog-container " border="primary">
           <Card.Body>
             <Card.Title>
               Difference between authentication vs authorization
@@ -41,11 +37,7 @@ const Blog = () => {
         </Card>
         <br />
 
-        <Card
-          className="blog-container"
-          border="secondary"
-          style={{ width: "18rem" }}
-        >
+        <Card className="blog-container" border="secondary">
           <Card.Body>
             <Card.Title>
               why are you using firebase? what other options do you have to
@@ -68,37 +60,37 @@ const Blog = () => {
         </Card>
         <br />
 
-        <Card
-          className="blog-container"
-          border="success"
-          style={{ width: "18rem" }}
-        >
+        <Card className="blog-container" border="success">
           <Card.Body>
-            <Card.Title>What other services does firebase provide other than authentication</Card.Title>
+            <Card.Title>
+              What other services does firebase provide other than
+              authentication
+            </Card.Title>
             <hr />
             <Card.Text>
-              There are many services which Firebase provides, Most useful of them are:
+              There are many services which Firebase provides, Most useful of
+              them are:
               <hr />
-               1.Cloud Firestore
-                <br />
-                2.Cloud Functions
-                <br />
-                3.Authentication
-                <br />
-                4.Hosting
-                <br />
-                5.Cloud Storage
-                <br />
-                6.Google Analytics
-                <br />
-                7.Predictions
-                <br />
-                8.Cloud Messaging
-                <br />
-                9.Dynamic Links
-                <br />
-                10.Remote Config
-                <br />
+              1.Cloud Firestore
+              <br />
+              2.Cloud Functions
+              <br />
+              3.Authentication
+              <br />
+              4.Hosting
+              <br />
+              5.Cloud Storage
+              <br />
+              6.Google Analytics
+              <br />
+              7.Predictions
+              <br />
+              8.Cloud Messaging
+              <br />
+              9.Dynamic Links
+              <br />
+              10.Remote Config
+              <br />
             </Card.Text>
           </Card.Body>
         </Card>
