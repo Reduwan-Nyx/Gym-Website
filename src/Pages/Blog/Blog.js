@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import "./Blog.css";
 const Blog = () => {
   return (
-    <div className="d-flex ">
+    <div className="blog d-flex ">
       <>
         <Card
           className="blog-container"

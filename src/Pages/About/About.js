@@ -5,7 +5,7 @@ import './About.css'
 const About = () => {
     return (
         <div className='card-container'>
-            <Card>
+            <Card className='card'>
   <Card.Img variant="top" src={image} />
   <Card.Body>
     <Card.Title>Tahsim Reduwan</Card.Title>
