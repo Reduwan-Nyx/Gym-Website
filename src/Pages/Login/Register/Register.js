@@ -42,7 +42,9 @@ const Register = () => {
                 <input type="email" name='email' id='' placeholder='Email Address' required/>
                 <br />
                 <input type="password" name='password' id='' placeholder='Password' required/>
-                <input className='bg-primary text-white border-0 rounded-3' type="submit" value="Register" />
+                <input type="checkbox" name="terms" id="terms" />
+                <label htmlFor="terms">Accept terms and Conditions</label>
+                <input className='w-50 mx-auto d-block btn btn-primary mt-3' type="submit" value="Register" />
             </form>
        <p>Already have a Account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Login</Link> 
        </p>
