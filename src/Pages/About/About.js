@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className='card-container'>
             <Card className='card'>
-  <Card.Img variant="top" src={image} />
+  <Card.Img className='mx-auto' variant="top" src={image} />
   <Card.Body>
     <Card.Title>Tahsim Reduwan</Card.Title>
     <Card.Text>
