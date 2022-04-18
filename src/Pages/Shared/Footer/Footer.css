@@ -1,0 +1,20 @@
+footer{
+    background-color: #111;
+    color: #fff;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-content{
+    margin: 10px;
+}
+
+.footer-content h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-left: 10px;
+}

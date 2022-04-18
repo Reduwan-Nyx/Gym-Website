@@ -4,6 +4,7 @@ import './Register.css'
 import auth from '../../../firebase.init'
 import { useAuthState, useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 const Register = () => {
 const [agree, setAgree] = useState(false)
     const [createUserWithEmailAndPassword, user, loading, error] =
@@ -16,8 +17,11 @@ const [agree, setAgree] = useState(false)
     const navigateLogin = event =>{
         navigate('/login')
     }
-
     
+    if(loading || updating){
+        return <Loading></Loading>
+    }
+
 
     const handleRegister = async (event) =>{
         event.preventDefault()

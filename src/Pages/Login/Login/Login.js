@@ -1,9 +1,12 @@
 import React, { useRef } from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Toast } from "react-bootstrap";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
+ import { ToastContainer, toast } from "react-toastify";
+ import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
     const emailRef = useRef('')
@@ -27,6 +30,10 @@ const Login = () => {
   const [sendPasswordResetEmail, sending] =
     useSendPasswordResetEmail(auth);
 
+
+    if(loading || sending){
+      return <Loading></Loading>
+    }
 
   if(user){
     navigate(from, { replace: true });
@@ -56,8 +63,12 @@ const Login = () => {
 
     const resetPassword = async() =>{
       const email = emailRef.current.value;
-      await sendPasswordResetEmail(email);
-      alert('sent email')
+      if(email){
+        await sendPasswordResetEmail(email);
+        toast("sent email");
+      } else{
+        toast('please enter your email')
+      }
     }
 
   return (
@@ -66,23 +77,51 @@ const Login = () => {
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
-        
+          <Form.Control
+            ref={emailRef}
+            type="email"
+            placeholder="Enter email"
+            required
+          />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control ref={passwordRef} type="password" placeholder="Password" required/>
+          <Form.Control
+            ref={passwordRef}
+            type="password"
+            placeholder="Password"
+            required
+          />
         </Form.Group>
-       
+
         <Button variant="primary w-50 d-block mx-auto mb-3" type="submit">
           Login
         </Button>
       </Form>
       {errorElement}
-       <p>New to Fitness Gym? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-        <p>Forgot password? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset password</Link> </p>
-       <SocialLogin></SocialLogin>
+      <p>
+        New to Fitness Gym?{" "}
+        <Link
+          to="/register"
+          className="text-primary pe-auto text-decoration-none"
+          onClick={navigateRegister}
+        >
+          Please Register
+        </Link>{" "}
+      </p>
+      <p>
+        Forgot password?{" "}
+        <button
+          
+          className="btn btn-link text-primary pe-auto text-decoration-none"
+          onClick={resetPassword}
+        >
+          Reset password
+        </button>{" "}
+      </p>
+      <SocialLogin></SocialLogin>
+      <ToastContainer />
     </div>
   );
 };
